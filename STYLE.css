@@ -14,7 +14,7 @@
 
 .calculator{
     height: 500px;
-    width: 470px;
+    width: 405px;
     margin: 50px auto;
     justify-content: center;
     align-content: center;
@@ -34,7 +34,7 @@
     justify-content: space-around;
     align-items: flex-end;
     padding: 5px;
-    font-size: 60px;
+    font-size:50px;
     font-weight: initial;
     text-shadow: 1.3px 1.3px #383838;
     margin: 15px;
