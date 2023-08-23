@@ -1,24 +1,40 @@
-const ACbutton =document.getElementById("AC")
-const plusminusbutton =document.getElementById("+/-")
-const percentbutton =document.getElementById("%")
-const slashbutton =document.getElementById("/")
-const sevenbutton =document.getElementById("7")
-const eightbutton =document.getElementById("8")
-const ninebutton =document.getElementById("9")
-const multiplybutton =document.getElementById("*")
-const fourbutton =document.getElementById("4")
-const fivebutton =document.getElementById("5")
-const sixbutton =document.getElementById("6")
-const minusbutton =document.getElementById("-")
-const onebutton =document.getElementById("1")
-const twobutton =document.getElementById("2")
-const threebutton =document.getElementById("3")
-const plusbutton =document.getElementById("+")
-const zerobutton =document.getElementById("0")
-const decimalbutton =document.getElementById("dot")
-const equaltobutton =document.getElementById("=")
+let displayValue = " "
+let btns=document.querySelectorAll(".button")
 
-let displayvalue = 0;
-let firstnumber = null;
-let sign = null;
-let secondnumber = null;
+
+
+Array.from(btns).forEach((button)=>{
+    button.addEventListener('click',(e)=>{
+        if (e.target.innerHTML == '='){
+            displayValue=eval(displayValue);
+            document.querySelector('input').value = displayValue;
+        }
+
+        else if (e.target.innerHTML == 'AC'){
+            displayValue=" ";
+            document.querySelector('input').value = displayValue;
+        }
+
+        else if (e.target.innerHTML == '%') {
+            displayValue=(eval(displayValue)/100);
+            document.querySelector('input').value = displayValue;
+        }
+        else if (e.target.innerHTML == '+/-') {
+            displayValue = (eval(displayValue))*(-1);
+            document.querySelector('input').value = displayValue;
+        }
+
+        else if (e.target.innerHTML == '+/-') {
+            displayValue = eval(displayValue).includes(dot)
+            document.querySelector('input').value = displayValue;
+        }
+
+        else{
+        console.log(e.target)
+        displayValue= displayValue + e.target.innerHTML;
+        document.querySelector('input').value = displayValue;
+        }
+    })
+})
+
+
