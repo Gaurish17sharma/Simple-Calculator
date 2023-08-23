@@ -13,8 +13,8 @@
 }
 
 .calculator{
-    height: 500px;
-    width: 405px;
+    height: 510px;
+    width: 407px;
     margin: 50px auto;
     justify-content: center;
     align-content: center;
@@ -29,17 +29,16 @@
 
 #display {
     background-color: #b2b9b7;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 5px;
     font-size:50px;
     font-weight: initial;
     text-shadow: 1.3px 1.3px #383838;
-    margin: 15px;
-    text-align: center;
+    margin:0px auto;
+    text-align:end;
+    margin-bottom: 15px;
     height: 100px;
+    margin-top: 15px;
+    width:380px;
+    margin-left: 10px;
 }
 
 
@@ -48,10 +47,96 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
-.line{
-    display: flex;
-    flex-direction: row;
+
+.button {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: initial;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
+    width:90px;
+    height:80px;
+    margin-bottom: 2px;
 }
 
+#zero {
+    width: 185px;
+    background-color: #217C7E;
+}
+
+#plus {
+    background-color: #FF8F1F;    
+}
+
+#minus {
+    background-color: #FF8F1F;    
+}
+
+#multiply {
+    background-color: #FF8F1F;    
+}
+
+#divide {
+    background-color: #FF8F1F;    
+}
+
+#equalto {
+    background-color: #FF8F1F;    
+}
+
+#one {
+    background-color: #217C7E;
+}
+
+#two {
+    background-color: #217C7E;
+}
+
+#three {
+    background-color: #217C7E;
+}
+
+#four {
+    background-color: #217C7E;
+}
+
+#five {
+    background-color: #217C7E;
+}
+
+#six {
+    background-color: #217C7E;
+}
+
+#seven {
+    background-color: #217C7E;
+}
+
+#eight {
+    background-color: #217C7E;
+}
+
+#nine {
+    background-color: #217C7E;
+}
+
+#decimal {
+    background-color: #217C7E;
+}
+
+#AC {
+    background-color: dodgerblue;
+}
+
+#plusminus {
+    background-color: dodgerblue;
+}
+
+#percent {
+    background-color: dodgerblue;
+}
