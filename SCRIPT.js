@@ -11,7 +11,7 @@ Array.from(btns).forEach((button)=>{
         }
 
         else if (e.target.innerHTML == 'AC'){
-            displayValue=" ";
+            displayValue="0";
             document.querySelector('input').value = displayValue;
         }
 
